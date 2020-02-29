@@ -1,0 +1,111 @@
+<html>
+<head>
+	<title> E-Vehicle Documents </title>
+	<script type="text/javascript">
+		function showData()
+		{
+			var name = document.getElementById('lblName');
+			var error = document.getElementById('errorLabel');
+		
+		}
+	</script>
+	<style>
+		body
+		{
+			background-image:url(bg.jpg);
+			background-repeat:no-repeat;
+			background-size:100%;
+		}
+		#menu
+		{
+			height:100%;
+			width:15%;
+			background-image:url(menuBg.jpg);
+			top:0;
+			left:0;
+			position:absolute;
+			color:#FFFFFF;
+			text-align:center;
+		}
+		#menu-items
+		{
+			color:#FFFFFF;
+			text-align:center;
+			padding:5px;
+			width:100%;
+			height:auto;
+			font-size:20px;
+			background-color:
+		}
+		#menu-items:hover
+		{
+			background-color:#660033;
+		}
+		a
+		{
+			text-decoration:none;
+			color:#FFFFFF;
+		}
+		h3
+		{
+			background-color:#CC9900;
+			padding:5px;
+		}
+		#errorLabel
+		{
+			color:#FF0000;
+		}
+		.content
+		{
+			left:210px;
+			position:absolute;
+			background-color:#000000;
+			opacity: 0.8;
+			height:100%;
+			width:84%;
+			color:#FFFFFF;
+			text-align:center;
+		}
+		#searchPanel
+		{
+			height:auto;
+			width:auto;
+			left:50px;
+			text-align:center;
+			border:#FFFFFF thick solid;
+			padding:5px;
+		}
+		span
+		{
+			color:#CCFF66;
+		}
+	</style>
+</head>
+
+<body>
+<div id="menu">
+		<h3> Navigations </h3>
+		<a href="evd.php"> <div id="menu-items"> Home </div> </a>
+		<a href="login.php"> <div id="menu-items"> Login </div> </a>
+		<a href="search_user.php"> <div id="menu-items"> Search User </div> </a>
+		<a href="search_vehicle.php"> <div id="menu-items"> Vehicle Search </div> </a>
+		<a href="https://sarathi.nic.in:8443/nrportal/sarathi/RtoDetailsRequest.jsp" target="_blank"> <div id="menu-items"> RTO List </div> </a>
+	</div>
+	
+	<div class="content">
+	<h1> E-Vehicle Documents </h1>
+	<h2> ------ Login------ </h2>
+	<br><br><br>
+		<div id="searchPanel" align="center">
+			<form name="frmSearchUser" method="get">
+		Enter User ID:  <input type="text" name="txtuserID" required/><br/><br/>
+		Enter Password: <input type="password" id="txtpwd" required/><br/><br/>
+		<input type="button" value="Login" name="btnSearch" onClick="<>">
+		<p id="errorLabel"></p>
+	</form>
+		</div>
+	
+	</div>
+	
+</body>
+</html>
